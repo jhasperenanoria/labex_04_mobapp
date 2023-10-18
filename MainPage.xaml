@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="labex_04_mobApp.MainPage">
+
+    <StackLayout>
+        <Grid
+            Padding="20" RowSpacing="10" RowDefinitions="Auto, Auto, *">
+            
+        </Grid>
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0">
+
+            <Label Text="Vertical">
+                
+                
+            </Label>
+
+            <Button Text="Start"
+                    VerticalOptions="Center"
+                    Clicked="OnVerticalEnd"
+                    >
+            </Button>
+
+            <Button Text="Center"
+                    VerticalOptions="Center"
+                    Clicked="OnVerticalCenter">
+            </Button>
+
+            <Button Text="End"   
+                    VerticalOptions="Center"
+                    Clicked="OnVerticalEnd">
+            </Button>
+
+           
+       
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0">
+
+            <Label Text="Label" 
+                   VerticalOptions="Center" />
+            
+            <Button Text="Horizontal Start" 
+                    Clicked="OnHorizontalStart" />
+            
+            <Button Text="Horizontal Center" 
+                    Clicked="OnHorizontalCenter" />
+            
+            <Button Text="Horizontal End" 
+                    Clicked="OnHorizontalEnd" />
+
+        </HorizontalStackLayout>
+
+        <BoxView 
+            
+            x:Name="blackCircle" 
+            Grid.Row="2" 
+            Color="Black" 
+            WidthRequest="40" 
+            HeightRequest="40" >
+            
+        </BoxView>
+
+     
+    </StackLayout>
+
+</ContentPage>
+          
